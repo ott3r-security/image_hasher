@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Upload the RMA Image</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="image">Select an Image:</label>
+        <input class="form-control form-control-lg" type="file" name="image" id="image" accept="image/*">
+        <br>
+
+
+
+
+
+        <label for="rma">RMA Number:</label>
+        <input class="form-control" type="text" name="rma" id="rma">
+        <br>
+        <input class="btn btn-primary btn-lg" type="submit" value="Upload">
+    </form>
+
+</div>
+
+{% endblock %}
